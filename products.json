@@ -1,0 +1,394 @@
+[
+  {
+    "id": null,
+    "name": "APLIKACJA",
+    "price": "3223.00",
+    "producerDTO": {
+      "id": null,
+      "name": "LOGGUS",
+      "countryDTO": {
+        "id": null,
+        "name": "HISZPANIA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ROLNICTWO"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "IT"
+    },
+    "eguarantees": [
+      "EXCHANGE"
+    ]
+  },
+  {
+    "id": null,
+    "name": "WODA",
+    "price": "0.88",
+    "producerDTO": {
+      "id": null,
+      "name": "LOGGUS",
+      "countryDTO": {
+        "id": null,
+        "name": "HISZPANIA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ROLNICTWO"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "NAPOJE"
+    },
+    "eguarantees": [
+      "EXCHANGE",
+      "MONEY_BACK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "NAPRAWA LAPTOPOW",
+    "price": "54.00",
+    "producerDTO": {
+      "id": null,
+      "name": "IT TECH",
+      "countryDTO": {
+        "id": null,
+        "name": "KOREA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ROLNICTWO"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "IT"
+    },
+    "eguarantees": []
+  },
+  {
+    "id": null,
+    "name": "MALUCH",
+    "price": "999.00",
+    "producerDTO": {
+      "id": null,
+      "name": "IT TECH",
+      "countryDTO": {
+        "id": null,
+        "name": "KOREA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ROLNICTWO"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "SAMOCHODY"
+    },
+    "eguarantees": [
+      "SERVICE",
+      "HELP_DESK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "FIAT",
+    "price": "9999.00",
+    "producerDTO": {
+      "id": null,
+      "name": "DISCOVER",
+      "countryDTO": {
+        "id": null,
+        "name": "ROSJA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "TRANSPORT"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "SAMOCHODY"
+    },
+    "eguarantees": []
+  },
+  {
+    "id": null,
+    "name": "MARCHEW",
+    "price": "3.32",
+    "producerDTO": {
+      "id": null,
+      "name": "DISCOVER",
+      "countryDTO": {
+        "id": null,
+        "name": "ROSJA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "TRANSPORT"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "WARZYWA"
+    },
+    "eguarantees": [
+      "SERVICE"
+    ]
+  },
+  {
+    "id": null,
+    "name": "BUS",
+    "price": "14876.00",
+    "producerDTO": {
+      "id": null,
+      "name": "VEGE TECH",
+      "countryDTO": {
+        "id": null,
+        "name": "NIEMCY"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "HANDEL"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "SAMOCHODY"
+    },
+    "eguarantees": [
+      "MONEY_BACK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "LAPTOP",
+    "price": "4449.90",
+    "producerDTO": {
+      "id": null,
+      "name": "VEGE TECH",
+      "countryDTO": {
+        "id": null,
+        "name": "NIEMCY"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "HANDEL"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "ELEKTRONIKA"
+    },
+    "eguarantees": [
+      "EXCHANGE"
+    ]
+  },
+  {
+    "id": null,
+    "name": "KOMORKA",
+    "price": "2998.77",
+    "producerDTO": {
+      "id": null,
+      "name": "UNIX",
+      "countryDTO": {
+        "id": null,
+        "name": "LITWA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "NAUKA"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "ELEKTRONIKA"
+    },
+    "eguarantees": [
+      "EXCHANGE",
+      "HELP_DESK",
+      "MONEY_BACK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "TELEWIZOR",
+    "price": "1888.88",
+    "producerDTO": {
+      "id": null,
+      "name": "UNIX",
+      "countryDTO": {
+        "id": null,
+        "name": "LITWA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "NAUKA"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "ELEKTRONIKA"
+    },
+    "eguarantees": [
+      "HELP_DESK",
+      "MONEY_BACK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "KOMODA",
+    "price": "99.99",
+    "producerDTO": {
+      "id": null,
+      "name": "TOOTSIE",
+      "countryDTO": {
+        "id": null,
+        "name": "LITWA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "KULTURA"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "MEBLE"
+    },
+    "eguarantees": [
+      "SERVICE",
+      "HELP_DESK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "SZAFA",
+    "price": "654.02",
+    "producerDTO": {
+      "id": null,
+      "name": "TOOTSIE",
+      "countryDTO": {
+        "id": null,
+        "name": "LITWA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "KULTURA"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "MEBLE"
+    },
+    "eguarantees": [
+      "HELP_DESK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "ODKURZACZ",
+    "price": "199.98",
+    "producerDTO": {
+      "id": null,
+      "name": "NEW SYSTEM",
+      "countryDTO": {
+        "id": null,
+        "name": "FRANCJA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ZDROWIE"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "SPRZET"
+    },
+    "eguarantees": [
+      "SERVICE"
+    ]
+  },
+  {
+    "id": null,
+    "name": "SLONECZNIK",
+    "price": "11.11",
+    "producerDTO": {
+      "id": null,
+      "name": "NEW SYSTEM",
+      "countryDTO": {
+        "id": null,
+        "name": "FRANCJA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ZDROWIE"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "ZIARNA"
+    },
+    "eguarantees": [
+      "SERVICE",
+      "EXCHANGE",
+      "HELP_DESK",
+      "MONEY_BACK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "BANAN",
+    "price": "8.76",
+    "producerDTO": {
+      "id": null,
+      "name": "MISIO",
+      "countryDTO": {
+        "id": null,
+        "name": "AUSTRALIA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "PRZEMYSL"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "OWOCE"
+    },
+    "eguarantees": [
+      "SERVICE",
+      "EXCHANGE",
+      "MONEY_BACK"
+    ]
+  },
+  {
+    "id": null,
+    "name": "JABLKO",
+    "price": "6.77",
+    "producerDTO": {
+      "id": null,
+      "name": "LOGGUS",
+      "countryDTO": {
+        "id": null,
+        "name": "HISZPANIA"
+      },
+      "tradeDTO": {
+        "id": null,
+        "name": "ROLNICTWO"
+      }
+    },
+    "categoryDTO": {
+      "id": null,
+      "name": "OWOCE"
+    },
+    "eguarantees": [
+      "SERVICE",
+      "EXCHANGE"
+    ]
+  }
+]

@@ -1,0 +1,786 @@
+2019-09-08 22:17:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-08 22:17:50 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-08 22:17:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-08 22:19:00 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-08 22:19:00 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-08 22:19:00 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-08 22:20:58 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-08 22:20:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-08 22:20:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:28:36 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:28:36 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:28:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:29:43 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:29:43 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:29:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:30:28 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:30:28 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:30:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:30:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:30:28 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:30:28 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:30:28 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:30:28 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:30:28 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:30:28 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:30:29 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@160c3ec1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:30:29 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select distinct p from pl.com.app.model.Product p left join fetch p.stock s   left join fetch p.customerOrders co
+2019-09-10 01:30:29 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:30:29 ERROR AbstractGenericRepository:36 - pl.com.app.model.Product: Index 0 out of bounds for length 0
+2019-09-10 01:30:29 ERROR AbstractGenericRepository:37 - pl.com.app.model.Product: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.impl.ProductRepositoryImpl.findAll(ProductRepositoryImpl.java:29)
+	pl.com.app.service.RetrieveDataService.getProductsInfoWithMaxPriceByCategory(RetrieveDataService.java:35)
+	pl.com.app.service.Statistics.productsInfoWithMaxPriceByCategory(Statistics.java:81)
+	pl.com.app.service.Statistics.retrieveStatisticsData(Statistics.java:39)
+	pl.com.app.service.Statistics.statistics(Statistics.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:69)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:30:29 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:30:29 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:31:06 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:31:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:31:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:31:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:31:07 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:31:07 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:31:07 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:31:07 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:31:07 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:31:07 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:31:07 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f2049b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:31:07 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 01:31:07 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:31:07 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 01:31:07 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:31:07 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:31:07 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:33:45 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:33:47 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:33:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:33:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:33:51 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:33:51 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:33:51 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:33:51 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:33:51 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:33:54 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:34:00 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e521715] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:34:02 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 01:34:02 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:34:03 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 01:34:03 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:35:20 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:35:20 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:35:38 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:35:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:35:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:35:41 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:35:44 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:35:44 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:35:44 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:35:44 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:35:44 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:35:47 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:35:53 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e521715] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:36:02 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 01:36:02 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:36:21 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 01:36:30 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:36:30 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:36:30 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:37:13 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:37:13 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:37:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:37:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:37:13 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:37:13 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:37:13 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:37:13 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:37:13 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:37:14 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:37:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1144a55a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:37:57 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 01:37:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:38:22 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 01:38:22 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:38:22 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:38:22 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:39:39 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:39:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:39:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:39:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:39:40 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:39:40 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:39:40 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:39:40 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:39:40 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:39:40 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:39:41 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f2049b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:39:41 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 01:39:41 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:39:41 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 01:39:41 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:39:41 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:39:41 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:42:57 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:42:57 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:42:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:42:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:42:58 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:42:58 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:42:58 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:42:58 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:42:58 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:42:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:42:58 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1144a55a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:42:59 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:42:59 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: org.hibernate.hql.internal.ast.QuerySyntaxException: CustomerOrder is not mapped [select t from CustomerOrder t]
+2019-09-10 01:42:59 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:42:59 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:42:59 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:43:13 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:43:13 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:43:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:43:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:43:13 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:43:13 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:43:13 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:43:13 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:43:13 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:43:14 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:43:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e521715] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 01:43:21 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 01:43:24 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: org.hibernate.hql.internal.ast.QuerySyntaxException: CustomerOrder is not mapped [select t from CustomerOrder t]
+2019-09-10 01:43:25 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:43:41 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 01:43:41 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 01:49:30 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:49:30 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:49:30 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:49:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:49:30 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:49:30 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:49:30 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:49:30 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:49:30 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:49:31 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 01:50:22 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 01:50:24 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 01:50:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 01:50:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 01:50:28 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 01:50:28 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 01:50:28 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 01:50:28 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 01:50:28 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 01:50:30 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:28:22 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:28:22 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:28:22 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:28:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:28:22 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:28:22 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:28:22 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:28:22 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:28:22 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:28:22 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:28:23 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10b3df93] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:28:23 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 07:28:23 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:28:23 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 07:28:23 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:28:23 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:28:23 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:28:51 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:28:51 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:28:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:28:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:28:52 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:28:52 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:28:52 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:28:52 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:28:52 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:28:52 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:28:52 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1144a55a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:28:58 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 07:28:58 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:30:43 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 07:30:43 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:30:43 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:30:43 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:39:38 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:39:39 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:39:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:39:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:39:39 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:39:39 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:39:39 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:39:39 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:39:39 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:39:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:39:40 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1144a55a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:39:51 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 07:39:51 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:40:25 ERROR AbstractGenericRepository:141 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 07:40:25 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:40:33 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:40:33 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:40:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:40:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:40:34 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:40:34 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:40:34 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:40:34 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:40:34 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:40:34 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:40:34 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10b3df93] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:40:35 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 07:40:35 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:40:35 ERROR AbstractGenericRepository:142 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 07:40:35 ERROR AbstractGenericRepository:143 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:133)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:40:35 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:40:35 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:41:42 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:41:42 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:41:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:41:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:41:42 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:41:42 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:41:42 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:41:42 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:41:42 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:41:43 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:41:43 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f2049b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:41:43 WARN  QuerySplitter:137 - HHH000183: no persistent classes found for query class: select t from pl.com.app.model.CustomerOrder t
+2019-09-10 07:41:43 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:41:43 ERROR AbstractGenericRepository:144 - pl.com.app.model.CustomerOrder: Index 0 out of bounds for length 0
+2019-09-10 07:41:43 ERROR AbstractGenericRepository:145 - pl.com.app.model.CustomerOrder: org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:703)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:687)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:135)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:41:43 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:41:43 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:42:14 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:42:14 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:42:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:42:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:42:14 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:42:14 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:42:14 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:42:14 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:42:14 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:42:15 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:42:15 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f2049b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:42:15 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:42:15 ERROR AbstractGenericRepository:144 - pl.com.app.model.CustomerOrder: org.hibernate.hql.internal.ast.QuerySyntaxException: CustomerOrder is not mapped [select t from CustomerOrder t]
+2019-09-10 07:42:15 ERROR AbstractGenericRepository:145 - pl.com.app.model.CustomerOrder: org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:135)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:42:15 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:42:15 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:46:09 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:46:09 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:46:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:46:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:46:09 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:46:09 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:46:09 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:46:09 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:46:09 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:46:10 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:46:24 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:46:24 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:46:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:46:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:46:25 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:46:25 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:46:25 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:46:25 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:46:25 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:46:25 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:46:25 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f2049b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:46:26 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:46:26 ERROR AbstractGenericRepository:144 - pl.com.app.model.CustomerOrder: org.hibernate.hql.internal.ast.QuerySyntaxException: CustomerOrder is not mapped [select t from CustomerOrder t]
+2019-09-10 07:46:26 ERROR AbstractGenericRepository:145 - pl.com.app.model.CustomerOrder: org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:135)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:46:26 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:46:26 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:47:40 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:47:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:47:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:47:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:47:40 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:47:40 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:47:40 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:47:40 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:47:40 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:47:40 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:47:41 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f2049b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:47:41 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:47:41 ERROR AbstractGenericRepository:144 - pl.com.app.model.CustomerOrder: org.hibernate.hql.internal.ast.QuerySyntaxException: CustomerOrder is not mapped [select t from CustomerOrder t]
+2019-09-10 07:47:41 ERROR AbstractGenericRepository:145 - pl.com.app.model.CustomerOrder: org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:135)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:47:41 ERROR AbstractGenericRepository:42 - pl.com.app.model.Errors: Unknown entity: pl.com.app.model.Errors
+2019-09-10 07:47:41 ERROR AbstractGenericRepository:43 - pl.com.app.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:57:21 WARN  PersistenceXmlParser:261 - HHH015018: Encountered multiple persistence-unit stanzas defining same name [HBN]; persistence-unit names must be unique
+2019-09-10 07:57:21 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:57:21 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:57:21 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:57:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:57:22 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:57:22 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:57:22 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:57:22 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:57:22 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:57:22 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:57:22 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@28a2a3e7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 07:57:22 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-10 07:57:23 ERROR AbstractGenericRepository:144 - pl.com.app.repository.model.CustomerOrder: org.hibernate.hql.internal.ast.QuerySyntaxException: CustomerOrder is not mapped [select t from CustomerOrder t]
+2019-09-10 07:57:23 ERROR AbstractGenericRepository:145 - pl.com.app.repository.model.CustomerOrder: org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	pl.com.app.repository.generic.AbstractGenericRepository.deleteAll(AbstractGenericRepository.java:135)
+	pl.com.app.service.DataInitializeService.initialize(DataInitializeService.java:32)
+	pl.com.app.service.menu.ProductsOrdersSimulator.loadDefaultData(ProductsOrdersSimulator.java:95)
+	pl.com.app.service.menu.ProductsOrdersSimulator.retrieveData(ProductsOrdersSimulator.java:77)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:30)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:57:23 ERROR AbstractGenericRepository:42 - pl.com.app.repository.model.Errors: Unknown entity: pl.com.app.repository.model.Errors
+2019-09-10 07:57:23 ERROR AbstractGenericRepository:43 - pl.com.app.repository.model.Errors: org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:892)
+	org.hibernate.internal.SessionImpl.merge(SessionImpl.java:870)
+	pl.com.app.repository.generic.AbstractGenericRepository.addOrUpdate(AbstractGenericRepository.java:38)
+	pl.com.app.service.AppAddService.addError(AppAddService.java:378)
+	pl.com.app.service.menu.ProductsOrdersSimulator.productsOrdersSimulator(ProductsOrdersSimulator.java:35)
+	pl.com.app.App.main(App.java:32)
+2019-09-10 07:59:16 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: HBN
+	...]
+2019-09-10 07:59:16 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-10 07:59:16 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-10 07:59:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-10 07:59:16 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 07:59:16 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 07:59:16 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 07:59:16 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2019-09-10 07:59:16 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 07:59:17 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 07:59:17 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 08:03:44 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: HBN]
+2019-09-10 08:03:44 INFO  Version:46 - HHH000412: Hibernate Core {5.4.4.Final}
+2019-09-10 08:03:44 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-10 08:03:45 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 08:03:45 INFO  pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 08:03:45 INFO  pooling:124 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 08:03:45 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2019-09-10 08:03:45 INFO  DriverManagerConnectionProviderImpl:239 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 08:03:45 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 08:03:46 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59c70ceb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 08:03:46 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:40 - pl.com.app.repository.model.Errors inserted or updated
+2019-09-10 08:03:47 INFO  AbstractGenericRepository:57 - pl.com.app.repository.model.Errors inserted or updated - session closed
+2019-09-10 08:04:09 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: HBN]
+2019-09-10 08:04:09 INFO  Version:46 - HHH000412: Hibernate Core {5.4.4.Final}
+2019-09-10 08:04:10 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-10 08:04:10 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 08:04:10 INFO  pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 08:04:10 INFO  pooling:124 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 08:04:10 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2019-09-10 08:04:10 INFO  DriverManagerConnectionProviderImpl:239 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 08:04:10 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 08:04:12 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59c70ceb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 08:04:12 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:40 - pl.com.app.repository.model.Errors inserted or updated
+2019-09-10 08:04:12 INFO  AbstractGenericRepository:57 - pl.com.app.repository.model.Errors inserted or updated - session closed
+2019-09-10 21:33:03 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: HBN]
+2019-09-10 21:33:03 INFO  Version:46 - HHH000412: Hibernate Core {5.4.4.Final}
+2019-09-10 21:33:04 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-10 21:33:04 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 21:33:04 INFO  pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 21:33:04 INFO  pooling:124 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 21:33:04 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2019-09-10 21:33:04 INFO  DriverManagerConnectionProviderImpl:239 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 21:33:04 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 21:33:06 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@46f902e0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 21:33:06 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:141 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:159 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:40 - pl.com.app.repository.model.Errors inserted or updated
+2019-09-10 21:33:06 INFO  AbstractGenericRepository:57 - pl.com.app.repository.model.Errors inserted or updated - session closed
+2019-09-10 21:41:21 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: HBN]
+2019-09-10 21:41:21 INFO  Version:46 - HHH000412: Hibernate Core {5.4.4.Final}
+2019-09-10 21:41:22 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-10 21:41:22 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-10 21:41:22 INFO  pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-10 21:41:22 INFO  pooling:124 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-10 21:41:22 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2019-09-10 21:41:22 INFO  DriverManagerConnectionProviderImpl:239 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-10 21:41:22 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-10 21:41:23 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47ac613b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-10 21:41:23 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.CustomerOrder deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Stock deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Product deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Producer deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Customer deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Shop deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Category deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Trade deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Country deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:139 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:157 - pl.com.app.repository.model.Payment deletedALL - session closed
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:40 - pl.com.app.repository.model.Errors inserted or updated
+2019-09-10 21:41:24 INFO  AbstractGenericRepository:57 - pl.com.app.repository.model.Errors inserted or updated - session closed
+2019-09-23 22:40:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: HBN]
+2019-09-23 22:40:49 INFO  Version:46 - HHH000412: Hibernate Core {5.4.4.Final}
+2019-09-23 22:40:49 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-23 22:40:49 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23 22:40:49 INFO  pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-23 22:40:49 INFO  pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+2019-09-23 22:40:49 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2019-09-23 22:40:49 INFO  DriverManagerConnectionProviderImpl:239 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23 22:40:50 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-23 22:40:51 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@997d532] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-23 22:40:51 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-23 22:40:51 INFO  AbstractGenericRepository:33 - pl.com.app.repository.model.CustomerOrder findedAll
+2019-09-23 22:40:51 INFO  AbstractGenericRepository:50 - pl.com.app.repository.model.CustomerOrder findedAll - session closed
+2019-09-23 22:40:57 INFO  pooling:408 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/PER01]
+2019-09-23 23:17:20 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: HBN]
+2019-09-23 23:17:21 INFO  Version:46 - HHH000412: Hibernate Core {5.4.4.Final}
+2019-09-23 23:17:21 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-23 23:17:21 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23 23:17:21 INFO  pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/PER01]
+2019-09-23 23:17:21 INFO  pooling:124 - HHH10001001: Connection properties: {password=****, user=root}
+2019-09-23 23:17:21 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2019-09-23 23:17:21 INFO  DriverManagerConnectionProviderImpl:239 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23 23:17:21 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-09-23 23:17:23 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b9a77c8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-23 23:17:23 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-23 23:17:23 INFO  AbstractGenericRepository:205 - pl.com.app.repository.model.Errors findedAll
+2019-09-23 23:17:23 INFO  AbstractGenericRepository:222 - pl.com.app.repository.model.Errors findedAll - session closed
+2019-09-23 23:17:28 INFO  pooling:408 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/PER01]
